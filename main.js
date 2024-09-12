@@ -71,7 +71,7 @@ const dropArea = document.getElementById('drop-area');
                     continue;
                 }
                 if (file.size > MAX_FILE_SIZE) {
-                    weui.topTips(`文件 ${file.name} 超过20MB限制`, 3000);
+                    weui.topTips(`文件 ${file.name} 超过20MB限制`, 1000);
                     continue;
                 }
                 const reader = new FileReader();
