@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多图上传</title>
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.4.4/weui.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h2 class="weui-panel__hd" style="text-align: center; margin-bottom: 20px;">多图上传</h2>
+            <div id="drop-area" class="weui-cells weui-cells_form">
+                <div>
+                    <p>拖放图片到此处或点击选择文件</p>
+                    <p>也可以直接粘贴图片</p>
+                    <p>最多可同时上传10张图片</p>
+                </div>
+                <input type="file" id="fileElem" multiple accept="image/*" style="display:none">
+                <div id="thumb-container"></div>
+            </div>
+            <div class="button-container">
+                <div class="weui-flex__item">
+                    <a href="javascript:" id="upload-btn" class="weui-btn weui-btn_primary">开始上传</a>
+                </div>
+                <div class="weui-flex__item">
+                    <a href="javascript:" id="clear-btn" class="weui-btn weui-btn_warn">清除所有</a>
+                </div>
+            </div>
+            <div id="result-container"></div>
+        </div>
+    </div>
+
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.2.1/weui.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
