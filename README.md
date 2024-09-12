@@ -1,0 +1,2 @@
+# cosimg
+cosimg_tencent
