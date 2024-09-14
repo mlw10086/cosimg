@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 define('API_BASE_URL', 'https://video.a2e.com.cn');
-define('AUTH_TOKEN', '更换为你的Authorization');
+define('AUTH_TOKEN', '更换为你的Authorization');//去上面接口抓
 
 $maxFileSize = 20 * 1024 * 1024; 
 
